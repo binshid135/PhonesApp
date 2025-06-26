@@ -41,7 +41,7 @@ export default function ProductGridSection() {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                const res = await axios.get('http://omanphone.smsoman.com/api/homepage');
+                const res = await axios.get('https://omanphone.smsoman.com/api/homepage');
                 const rawData = res.data;
 
                 const productSections: ProductListSection[] = rawData

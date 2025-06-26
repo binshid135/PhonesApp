@@ -72,7 +72,7 @@ const Product = () => {
 
     const fetchProductDetails = async () => {
         try {
-            const response = await fetch(`http://omanphone.smsoman.com/api/productdetails?id=${id}`);
+            const response = await fetch(`https://omanphone.smsoman.com/api/productdetails?id=${id}`);
             const data: Product = await response.json();
             setProduct(data);
         } catch (error) {

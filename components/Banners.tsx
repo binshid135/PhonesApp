@@ -32,7 +32,7 @@ const Banners = () => {
   useEffect(() => {
     const fetchBanners = async () => {
       try {
-        const response = await axios.get('http://omanphone.smsoman.com/api/configuration');
+        const response = await axios.get('https://omanphone.smsoman.com/api/configuration');
         if (response.data?.status === 'success') {
           const sliderData = response.data?.data?.slider || [];
           setBanners(sliderData.filter((item: BannerItem) => item?.image));
