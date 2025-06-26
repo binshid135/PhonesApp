@@ -5,7 +5,6 @@ import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 const Header = () => {
     return (
         <View style={styles.container}>
-            {/* Top Row - Menu, Logo, Notification */}
             <View style={styles.topRow}>
                 <TouchableOpacity>
                     <Ionicons name="menu" size={28} color="white" />
@@ -22,7 +21,6 @@ const Header = () => {
                 </TouchableOpacity>
             </View>
 
-            {/* Search Bar */}
             <View style={styles.searchBar}>
                 <Ionicons name="search" size={20} color="#888" style={{ marginLeft: 10 }} />
                 <TextInput
